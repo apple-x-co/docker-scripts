@@ -1,6 +1,6 @@
 #!/bin/sh
 
 # at local
-container="contact-form-with-CA-webapp"
-document_root="/var/www/vhosts/html/"
-docker exec -it ${container} composer create-project --prefer-dist cakephp/app ${document_root}
+container_name="container-name"
+document_root_path="/var/www/html/"
+docker exec -it ${container_name} composer create-project --prefer-dist cakephp/app ${document_root_path}
